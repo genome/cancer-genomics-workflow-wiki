@@ -150,8 +150,12 @@ $JAVA_EIGHT -jar $SOMATIC_HOME/software/picard-tools-2.4.1/picard.jar -h
 
 ### [GATK](https://software.broadinstitute.org/gatk/)
 
+* NOTE: Replace localhost in step 2 with the name of your host. 
+* Download instructions may differ depending on the location of your host and configuration of your network.
+* Steps 3 and 4 should be run from the localhost.
+
 1. Manually download GATK after accepting the license : https://www.broadinstitute.org/gatk/download/auth?package=GATK
-2. Copy the download : `scp Downloads/GenomeAnalysisTK-3.6.tar.bz2 linus2112:$SOMATIC_HOME/software/.`
+2. Copy the download : `scp Downloads/GenomeAnalysisTK-3.6.tar.bz2 localhost:$SOMATIC_HOME/software/.`
 3. Unzip the archive : `tar --bzip2 -xvf GenomeAnalysisTK-3.6.tar.bz2`
 4. Test with JAVA8 : `$JAVA_EIGHT -jar GenomeAnalysisTK.jar -h`
 
