@@ -2,6 +2,16 @@
 
 ## Shell Variables
 
+* NOTE: The directory where you download the following config files will become the base directory for this tutorial.
+* You will need to update the $SOMATIC_HOME environment variable in Somatic_base_config.sh to match your local directory.
+
+```bash
+
+curl -L -k -o Somatic_config.sh https://raw.githubusercontent.com/genome/arvados_trial_wiki/master/Somatic_config.sh
+curl -L -k -o Somatic_base_config.sh https://raw.githubusercontent.com/genome/arvados_trial_wiki/master/Somatic_base_config.sh
+
+```
+
 * NOTE: This must be run each time a new terminal window is opened.  These shell variables will NOT persist in your environment.
 
 ```bash
