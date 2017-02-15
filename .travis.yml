@@ -1,0 +1,15 @@
+script:
+- |
+  git config user.name jasonwalker80
+  git config user.email jason.walker@wustl.edu
+  git remote remove origin
+  git remote add origin https://$GITHUB_API_KEY@github.com/genome/arvados_trial_wiki.git > /dev/null 2>&1
+  git remote add upstream https://$GITHUB_API_KEY@github.com/genome/arvados_trial.wiki.git > /dev/null 2>&1
+  git fetch origin
+  git fetch upstream
+  git merge upstream/master --no-edit
+  git push origin HEAD:master > /dev/null 2>&1
+  git push upstream HEAD:master > /dev/null 2>&1
+env:
+  matrix:
+    secure: guXRzeN4xwZzGSMsUzdGCi3lRxowpqdXdcP2AQz7aZIqdyUVZJ0TowFX9bUudE238JW6v+0Cp19nRc6cx9d5WF9zIH/wVdH3RljHnZA17uHCM421sbyyCgdxlgTnka08EvP0Cpn7zH8UJmu0su+bAJa+KM8QMQDEpF01L5Spmx8HVfEqE96hkxyjgHcShML09abRqHiCwMGAK+xkxwqFdCd29tuWZ3bBIV7QyAxNWkz2Me3+qXCf4OkQiS6mGkfr8MpKBSDqYzphD/DG0rK1dp8ztIFiDBaOO+ngY+blVDV5FxR2DjAshrPaLE0cmq13ixFog+GRgA/fnXN/USrdbysuUGF43gcY4uUMnJ5pD6Sk5dnhaor8/+qboR2ynwEIK32h5t0k1oLq6Pk5qmAlVV75Zs8X3Fr8bLm6nGhbxjB7kQDcV4jCfauAi2NoKURMcxk3odHMD/a69K0bEt/glkydbzQiSMvh0toi94qkgypIOdZkjGwxYLvVVdJoeosIKM6uV5rehP2NJ7fsbuo5ry+pMN8eCLXndUy2LeQHcDNG615WSzlqp3rQ51e0lDacejbvPXRkgjpLpP0TnKGeDfcfYeEu2H1u+mVg7LygF4kNwxtmgDwvkrHEkAdN72E1OIuKW5IenUVX9Iq38+p5fRvuJvR3y9E8m1NMvs7qQ0k=
