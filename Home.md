@@ -1,3 +1,4 @@
+An analysis tutorial to match the CWL workflows in this repo.
 #Table of Contents
 <ol start="0">
   <li><strong>Module 1 - Installs and Downloads</strong></li>
