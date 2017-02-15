@@ -1,0 +1,8 @@
+REFERENCE_NAME=GRCh38
+
+REFERENCE_FASTA=/gscmnt/gc9005/info/model_data/2887491634/build4ec1c5bd1f6941b8a99f2e230217cb91/all_sequences.fa
+REFERENCE_GTF=/gscmnt/gc12001/info/model_data/2772828715/build86177aac524b43b4848551872f5e4c78/annotation_data/rna_annotation/4ec1c5bd1f6941b8a99f2e2302
+
+TUMOR_RNA_BAM=/gscmnt/gc9016/info/model_data/0a74e61456ea4612840c647e9ea2411d/build0cd3ffee4ef14e9d80fcc023d5548ad6/alignments/e7c33172032f43e383e34b8df
+TUMOR_DNA_BAM=/gscmnt/gc1401/info/build_merged_alignments/merged-alignment-blade14-4-8.gsc.wustl.edu-jwalker-31054-58617c541153434c8c61e0ee93aef61a/5861
+NORMAL_DNA_BAM=/gscmnt/gc13030/info/build_merged_alignments/merged-alignment-blade13-2-1.gsc.wustl.edu-jwalker-6069-2bf0e5226390471dadd4e1127e30976b/2bf

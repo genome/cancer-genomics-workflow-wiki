@@ -1,0 +1,7 @@
+# Reference specific
+
+REFERENCE_NAME=GRCh38
+REFERENCE_FASTA=/gscmnt/gc9005/info/model_data/2887491634/build4ec1c5bd1f6941b8a99f2e230217cb91/all_sequences.fa
+REFERENCE_GTF=/gscmnt/gc12001/info/model_data/2772828715/build86177aac524b43b4848551872f5e4c78/annotation_data/rna_annotation/4ec1c5bd1f6941b8a99f2e230217cb91-all_sequences.gtf
+
+source RnaSeq_base_config.sh
