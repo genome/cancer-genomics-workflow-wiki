@@ -29,7 +29,7 @@ GENOME_ASSEMBLY=GRCh38DH
 GENOME_BASENAME=GRCh38_full_analysis_set_plus_decoy_hla
 GENOME_URI=ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/$GENOME_BASENAME.fa
 
-SOMATIC_HOME=/gscmnt/gc2746/cad/HCC1395/arvados
+SOMATIC_HOME=/gscmnt/gc2764/cad/HCC1395/arvados
 
 # See TUMOR_DATA_SM and NORMAL_DATA_SM in config.sh
 #SOMATIC_NORMAL_SAMPLE=H_NJ-HCC1395-HCC1395_BL
