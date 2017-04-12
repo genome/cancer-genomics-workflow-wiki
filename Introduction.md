@@ -7,8 +7,8 @@
 
 ```bash
 
-curl -L -k -o Somatic_config.sh https://raw.githubusercontent.com/genome/arvados_trial_wiki/master/Somatic_config.sh
-curl -L -k -o Somatic_base_config.sh https://raw.githubusercontent.com/genome/arvados_trial_wiki/master/Somatic_base_config.sh
+curl -L -k -o Somatic_config.sh https://raw.githubusercontent.com/genome/cancer-genomics-workflow-wiki/master/Somatic_config.sh
+curl -L -k -o Somatic_base_config.sh https://raw.githubusercontent.com/genome/cancer-genomics-workflow-wiki/master/Somatic_base_config.sh
 
 ```
 
@@ -219,7 +219,7 @@ cd $SOMATIC_HOME/software
 curl -L -k -o pindel-0.2.5b8.tar.gz https://github.com/genome/pindel/archive/v0.2.5b8.tar.gz
 tar -xzvf pindel-0.2.5b8.tar.gz
 cd pindel-0.2.5b8/
-./INSTALL /gscuser/jwalker/git/HCC1395/arvados/software/htslib-1.3.2
+./INSTALL $SOMATIC_HOME/software/htslib-1.3.2
 ln -s $SOMATIC_HOME/software/pindel-0.2.5b8/pindel $SOMATIC_HOME/software/bin/pindel
 ln -s $SOMATIC_HOME/software/pindel-0.2.5b8/pindel2vcf $SOMATIC_HOME/software/bin/pindel2vcf
 cd $SOMATIC_HOME
